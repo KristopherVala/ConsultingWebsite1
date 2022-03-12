@@ -1,0 +1,62 @@
+.aboutContainer {
+  min-height: 100vh;
+  background-color: #fceeee;
+  /* background-color: white; */
+}
+
+.outerContainer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* Grid Sections */
+
+.about-grid {
+  grid-template-columns: repeat(2, 30% 70%);
+}
+
+/*  */
+
+.aboutSection {
+  width: 85%;
+  /* background-color: #1971c2; */
+  margin: 0 auto;
+  border-radius: 2.5rem;
+  margin-top: auto;
+}
+
+/* biotextSection */
+.bioSection {
+  padding: 3rem 3rem 3rem 0;
+}
+.bioHeader {
+  font-style: italic;
+  font-size: 4.2rem;
+  margin-bottom: 2rem;
+  font-weight: 800;
+}
+
+.bioText {
+  font-size: 2.2rem;
+  line-height: 1.3;
+  color: black;
+}
+
+.newP {
+  margin-top: 2rem;
+}
+
+/* Photo Section */
+
+.photoSection {
+  display: flex;
+  justify-content: center;
+  padding-top: 30%;
+  margin-right: 5rem;
+}
+
+.bioPhoto {
+  border-radius: 30%;
+  height: 30rem;
+  width: 30rem;
+}

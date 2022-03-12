@@ -1,0 +1,39 @@
+.nav {
+  min-width: 100%;
+  max-height: 7rem;
+  background-color: transparent;
+  position: fixed;
+  transition: all 0.7s;
+  z-index: 2;
+}
+
+.navItems {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  gap: 3rem;
+  justify-content: end;
+  padding-right: 5rem;
+}
+.item {
+  list-style: none;
+}
+
+.listLink {
+  border: none;
+  background-color: transparent;
+  color: whitesmoke;
+  font-size: 1.8rem;
+  transition-duration: 0.5s;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.listLink:hover {
+  color: navy;
+  cursor: pointer;
+}
+
+.stickyNav {
+  background-color: rgba(0, 0, 0);
+}
