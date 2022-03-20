@@ -1,0 +1,66 @@
+.homeContainer {
+  min-height: 100vh;
+  background-color: #a5d8ff;
+  background-image: url("../../images/background.jpg");
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.7)
+    ),
+    url("../../images/background.jpg");
+  background-size: cover;
+  background-size: cover;
+}
+
+.nameDisplay {
+  font-size: 8rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 5rem;
+  margin-left: 5rem;
+  color: white;
+  font-weight: 700;
+}
+
+/* Text on homepage */
+
+.homeBox {
+  display: flex;
+  max-width: 30%;
+  margin: 0 auto;
+  justify-content: center;
+  /* background-color: rgb(182, 181, 181); */
+  margin-top: 15%;
+  padding: 3rem;
+  border-radius: 3rem;
+  flex-direction: column;
+}
+
+.meetPennyBtn {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 3rem;
+  height: 6rem;
+  font-size: 2.4rem;
+  color: black;
+  cursor: pointer;
+  text-align: center;
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  transition: all 1.5s;
+  font-weight: 700;
+  background-color: white;
+}
+.meetPennyBtn:hover {
+  border: 3px solid white;
+  color: white;
+  background-color: black;
+}
+
+.homeText {
+  font-size: 2.4rem;
+  color: white;
+}
