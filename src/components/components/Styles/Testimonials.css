@@ -1,7 +1,8 @@
 .testimonialContainer {
-  min-height: 100vh;
+  max-height: 100%;
   background-color: rgb(252, 238, 238);
   /* background-color: white; */
+  padding-bottom: 5rem;
 }
 
 .testHeader {
@@ -9,12 +10,18 @@
   font-weight: 700;
   color: black;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  max-width: 100%;
+  /* background-color: white; */
+  border-radius: 25px;
+  padding: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  /* box-shadow: 0px 0px 5px rgb(212, 210, 210); */
 }
 .lineTestimonial {
-  width: 30%;
-  margin: 0 auto;
-  border-top: 1px solid black;
+  max-width: 100%;
+  border-top: 2px solid black;
 }
 /* Grid */
 .testimonialContent {
@@ -22,7 +29,7 @@
   margin: 0 auto;
   padding-left: 2rem;
   padding-right: 2rem;
-  margin-top: 8rem;
+  margin-top: 10rem;
 }
 /* Testimonial Card */
 
@@ -61,4 +68,25 @@
   position: absolute;
   top: -4rem;
   left: 0.5rem;
+}
+
+/* Media queries*/
+@media (max-width: 930px) {
+  .grid-3-col {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 6rem;
+  }
+  .lastCard {
+    grid-column: 1/-1;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 600px) {
+  .grid-3-col {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .centerMobile {
+    grid-column: 1/-1;
+    margin: 0 auto;
+  }
 }

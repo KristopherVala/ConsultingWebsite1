@@ -7,9 +7,13 @@ const Home = () => {
   return (
     <div className="homeContainer" id="Home">
       <div className="outerContainer">
-        <h1 className="nameDisplay"> PS Consulting</h1>
+        <h1 className="nameDisplay"> People and Strategy Consulting</h1>
         <div className="homeBox">
-          <h2 className="homeText">Consulting From An Industry Veteran</h2>
+          <p className="homeText ">Consulting From A Seasoned Professional</p>
+          <p className="homeText subHomeText">
+            See how I can Help Accomplish Your Goals
+          </p>
+
           <Link
             to="About"
             spy={true}

@@ -18,7 +18,7 @@ const Navbar = () => {
     <div>
       <div className={navbar ? "nav stickyNav" : "nav"}>
         <ul className="navItems">
-          <li className="item">
+          {/* <li className="item">
             <Link
               to="Home"
               spy={true}
@@ -29,7 +29,7 @@ const Navbar = () => {
             >
               Home
             </Link>
-          </li>
+          </li> */}
           <li className="item">
             <Link
               to="About"

@@ -7,8 +7,12 @@ const Contact = () => {
   return (
     <div className="contactContainer" id="Contact">
       <div className="outerContainer socialOuter">
-        <h1 className="contactPageTitle"> Lets Get In Touch</h1>
-        <div className="lineContact"></div>
+        <div className="headerContainer grid grid-3-col-header">
+          <div className="lineContact"></div>
+
+          <h1 className="contactPageTitle"> Lets Get In Touch</h1>
+          <div className="lineContact"></div>
+        </div>
         <div className="grid contact-grid">
           <div className="contactForm ">
             <select name="type" id="type" className="selectPicker">
@@ -64,7 +68,10 @@ const Contact = () => {
         {/* End of form */}
 
         <div className="socials">
-          <a href="#" className="linkedInLink">
+          <a
+            href="https://ca.linkedin.com/in/penny-smiley-3bb6ab33"
+            className="linkedInLink"
+          >
             <img src={linkedinImage} alt="Linked-In" className="linkedImage" />
           </a>
           <span className="emailDisplay">PennySmileyWork@email.com</span>

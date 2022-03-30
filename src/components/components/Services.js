@@ -6,8 +6,11 @@ const Services = () => {
   return (
     <div className="servicesContainer" id="Services">
       <div className="outerContainer">
-        <h2 className="servicesHeader"> Services</h2>
-        <div className="lineServices"></div>
+        <div className="servicesHeaderBox">
+          <h2 className="servicesHeader">My Services</h2>
+          <h3 className="headerSubText">What Can I Do For You</h3>
+        </div>
+        {/* <div className="lineServices"></div> */}
 
         <div className="servicesSection grid servicesGrid">
           <div className="servicesSide">

@@ -1,12 +1,12 @@
 .aboutContainer {
-  min-height: 100vh;
+  max-height: 100%;
   background-color: #fceeee;
   /* background-color: white; */
 }
 
 .outerContainer {
   padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
 }
 
 /* Grid Sections */
@@ -27,7 +27,10 @@
 
 /* biotextSection */
 .bioSection {
-  padding: 3rem 3rem 3rem 0;
+  padding: 3rem 3rem 3rem 3rem;
+  background-color: rgba(255, 255, 255, 0.192);
+  border-radius: 20px;
+  box-shadow: 0px 0px 2px #dddddd;
 }
 .bioHeader {
   font-style: italic;
@@ -37,13 +40,10 @@
 }
 
 .bioText {
-  font-size: 1.8rem;
+  font-size: 2rem;
   line-height: 1.3;
   color: black;
   transition-duration: 0.5s;
-}
-
-.newP {
 }
 
 /* Photo Section */
@@ -69,17 +69,19 @@
   display: flex;
   margin: 0 auto;
   border-radius: 25px;
-  width: 25%;
+  min-width: 25%;
   margin-top: 4rem;
   transition-duration: 1s;
   text-transform: uppercase;
   font-weight: 700;
   cursor: pointer;
+  background-color: white;
 }
 
 .toggleBtn:hover {
   transition-duration: 1s;
-  background-color: #e0d9d9;
+  background-color: rgb(48, 48, 48);
+  color: white;
 }
 
 .buttonText {
@@ -87,7 +89,32 @@
   font-size: 2.2rem;
 }
 
-.learnMore {
-  transition-duration: 0.5s;
-  display: none;
+.toggleSet {
+  overflow: hidden;
+  max-height: 0px;
+}
+
+.collapseableDiv {
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 1.5s;
+}
+
+.collapseableDiv.show {
+  height: auto;
+  max-height: 2000px;
+  transition: all 1.5s;
+}
+
+/* Media Queries */
+
+@media (max-width: 930px) {
+  .about-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .photoSection {
+    margin: 0 auto;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+  }
 }

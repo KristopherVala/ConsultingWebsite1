@@ -8,10 +8,15 @@ const Testimonials = () => {
   return (
     <div className="testimonialContainer" id="Testimonials">
       <div className="outerContainer">
-        <h2 className="testHeader">Testimonials</h2>
-        <div className="lineTestimonial"></div>
+        <div className="headerContainer grid grid-3-col-header">
+          <div className="lineTestimonial"></div>
+
+          <h2 className="testHeader">Testimonials</h2>
+          <div className="lineTestimonial"></div>
+        </div>
+
         <div className="testimonialContent grid grid-3-col">
-          <div className="card">
+          <div className="card centerMobile">
             <img src={user2} className="testimonialImage" alt="Mary Tyler" />
             <p className="mainTextTestimonal">
               "Reprehenderit sunt ullamco culpa amet non aute. Amet sit ad
@@ -25,7 +30,7 @@ const Testimonials = () => {
             <p className="testimonialName">Mary Tyler</p>
             <p className="testimonialTitle">HR Lead</p>
           </div>
-          <div className="card">
+          <div className="card centerMobile">
             <img src={user1} className="testimonialImage" alt="Mary Tyler" />
 
             <p className="mainTextTestimonal">
@@ -40,7 +45,7 @@ const Testimonials = () => {
             <p className="testimonialName">Jared Stevens</p>
             <p className="testimonialTitle">Director of Marketing</p>
           </div>
-          <div className="card">
+          <div className="card lastCard">
             <img src={user3} className="testimonialImage" alt="Mary Tyler" />
 
             <p className="mainTextTestimonal">

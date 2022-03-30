@@ -26,14 +26,29 @@
   font-size: 1.8rem;
   /* transition-duration: 0.5s; */
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
+}
+.listLink::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: #ffffff;
+  transition: width 0.5s;
+}
+.listLink:hover {
+  cursor: pointer;
 }
 
-.listLink:hover {
-  /* color: rgb(176, 176, 243); */
+.listLink:hover::after {
+  width: 100%;
+}
+
+/* }.listLink:hover {
+  /* color: rgb(176, 176, 243); 
   cursor: pointer;
   border-bottom: 1.5px solid white;
-}
+} */
 
 .stickyNav {
   background-color: rgba(0, 0, 0);
